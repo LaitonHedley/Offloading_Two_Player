@@ -1,0 +1,79 @@
+
+/* #main {
+    position: relative ;
+    left: 50% ;
+    top: 50% ;
+    transform: translate(-50%, -50%);
+    width: 20*45px ;
+    height: 16*45px ;
+} */
+
+body {
+    background-color: black;  /* Set the background color to grey */
+    margin: 0;  /* Remove default body margin */
+    height: 100vh;  /* Ensure the body takes up the full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main {
+    position: relative;  /* Use relative positioning for the main container */
+    width: 600px;  /* Adjust the width as per your layout */
+    height: 600px;  /* Adjust the height as per your layout */
+    background-color: grey;  /* Optional: Set a background color for the main element */
+}
+
+#player1,
+#player2 {
+    position: absolute ;
+    width: 45px ;
+    height: 45px ;
+    border-radius: 5px ;
+    z-index: 1 ;
+    transition: all .1s;
+    background-size: 1200% 600% ;
+    background-image: url('graphics.png');
+}
+
+/* #player1 {
+    background-color: blue ;
+    background-position-x: 300%;
+}
+
+#player2 {
+    background-color: brown ;
+    background-position-x: 300%;
+    background-position-y: 500% ;
+} */
+
+#player1 {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%; /* Circle */
+    background-color: blue;
+}
+
+#player2 {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%; /* Circle */
+    background-color: red; /* Player 2 color */
+}
+
+.cell {
+    width: 45px ;
+    height: 45px ;
+    position: absolute ;
+    background-color: grey ;
+    border: 1px ;
+    color: black ;
+}
+/* circle */
+
+
+
+
+
